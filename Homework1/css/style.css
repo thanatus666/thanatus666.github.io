@@ -1,0 +1,48 @@
+.centerPos{
+	text-align: center;
+}
+
+.allText{
+	font-size: 17px;
+	padding-left: 20px;
+}
+
+.mainDiv{
+	background: white;
+	width: 520px;
+	height: 750px;
+	border: solid 1px #cecece;
+	margin 0 auto;
+	box-shadow: 0 0 10px #919090;
+}
+
+.textDiv{
+	margin: 10px 50px 10px 50px;
+}
+
+body{
+	background-color: #eeeeee;
+}
+
+img{
+	height: 145px;
+}
+
+li{
+	padding-top: 10px;
+}
+
+hr{
+	margin-bottom: 30px;
+}
+p{
+	margin-left: 10px;
+}
+.next{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.previous{
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
