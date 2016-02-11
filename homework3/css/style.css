@@ -1,0 +1,127 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #f9f9f9;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Основно окно по центру*/
+.mainDiv{
+		background: #ffffff;
+		margin: 0 auto;
+		width: 1060px;
+		height: 950px;
+		border: solid 1px #cecece;
+		box-shadow: 0 0 10px grey;
+}
+
+/*Контейнер для лого*/
+.headerDiv{
+	margin-left: 46px;
+	margin-top: 49px;
+	margin-bottom: 40px;
+}
+
+/*Контейнер для верхнего меню*/
+.menuDiv{
+	width: 969px;
+	height: 42px;
+	margin-left:46px;
+	background: linear-gradient(90deg,  #444343, #5e5e5e);
+}
+
+/*Контейнер для основного контента */
+.main{
+	width: 969px;
+	height: 650px;
+	/*background: blue;*/
+	margin: 0px 46px;
+}
+
+li{
+ list-style:none;
+ /*margin:0px;
+ padding:0px;*/
+}
+ 
+
+.menu li{
+ 	padding:  11px 35px;
+ 	/*float:left;*/
+ 	display: inline-block;
+	font-size: 14px;
+	color: white;
+}
+
+.menu li:hover{
+	background: linear-gradient(90deg,  #4a4a4a, #2e2e2e);
+	border-left: 1px #838383 solid;
+	border-right: 1px #838383 solid;
+}
+
+li:first-child {
+	padding-left: 25px;
+}
+
+.leftList{
+	float: left;
+	width: 240px;
+	height: 240px;
+	margin: 36px 0px;
+}
+
+.rightList{
+	float: right;
+}
+ 
+.leftMenu li{
+	color: #2c2c2c;
+ 	display:block;
+ 	padding:8px 25px;
+ 	border: 1px #c8c8c8 solid;
+}
+
+.leftMenu li:hover{
+	background: #f9f9f9;
+	padding-left: 35px;
+}
+
+.borderDiv{
+	width: 677px;
+	height: 401px;
+	border: 1px #c8c8c8 solid;
+	text-align: center;
+	margin-right: 0px;
+	margin-top: 36px;
+
+}
+.textUnderImg{
+	margin-top: 40px;
+	width: 677px;
+	height: 208px;
+	font-size: 13.33px;
+	color: #2c2c2c;	
+}
+
+
+.footerDiv{
+	width: 969px;
+	height: 42px;
+	margin-left:46px;
+	background: #e1e1e1;
+	float: left;
+}
+
+.footerLi li{
+ 	padding:  11px 35px;
+ 	display: inline-block;
+	font-size: 14px;
+	color: #2c2c2c;
+}
+
+.footerLi li:hover{
+	text-decoration: underline;
+}
