@@ -107,8 +107,8 @@ li:first-child {
 }
 
 
-.footerDiv{
-	width: 969px;
+.footerDivLeft{
+	width: 700px;
 	height: 42px;
 	margin-left:46px;
 	background: #e1e1e1;
@@ -124,4 +124,17 @@ li:first-child {
 
 .footerLi li:hover{
 	text-decoration: underline;
+}
+
+.footerDivRight{
+	width: 269px;
+	height: 42px;
+	margin-right:45px;
+	background: #e1e1e1;
+	float: right;
+}
+.text{
+	padding: 8px 0;
+	margin-right: 20px;
+	text-align: right;
 }
