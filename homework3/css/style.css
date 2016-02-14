@@ -3,12 +3,17 @@
 	padding: 0px;
 }
 
+a{
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+
 body{
 	background: #f9f9f9;
 	font-family: 'Open Sans', sans-serif;
 }
 
-/*Основно окно по центру*/
 .mainDiv{
 		background: #ffffff;
 		margin: 0 auto;
@@ -18,22 +23,19 @@ body{
 		box-shadow: 0 0 10px grey;
 }
 
-/*Контейнер для лого*/
 .headerDiv{
 	margin-left: 46px;
 	margin-top: 49px;
 	margin-bottom: 40px;
 }
 
-/*Контейнер для верхнего меню*/
 .menuDiv{
 	width: 969px;
-	height: 42px;
+	height: 43px;
 	margin-left:46px;
 	background: linear-gradient(90deg,  #444343, #5e5e5e);
 }
 
-/*Контейнер для основного контента */
 .main{
 	width: 969px;
 	height: 650px;
@@ -50,6 +52,7 @@ li{
  	display: inline-block;
 	font-size: 14px;
 	color: white;
+	border: 1px rgba(255,255,255,0) solid ;
 }
 
 .menu li:hover{
@@ -102,6 +105,7 @@ li:first-child {
 
 .textUnderImg{
 	padding-left: 25px;
+	padding-right: 25px;
 	font-size: 13.33px;
 	color: #2c2c2c;	
 }
