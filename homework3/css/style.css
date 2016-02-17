@@ -56,21 +56,11 @@ li{
 	color: white;
 }
 
-/*.menu li:hover{
-	background: linear-gradient(90deg,  #4a4a4a, #2e2e2e);
-	border-left: 1px #838383 solid;
-	border-right: 1px #838383 solid;
-}
-*/
 .a_menu:hover{
 	background: linear-gradient(90deg,  #4a4a4a, #2e2e2e);
 	border-left: 1px #838383 solid;
 	border-right: 1px #838383 solid;
 }
-
-/*li:first-child {
-	padding-left: 25px;
-}*/
 
 .leftList{
 	float: left;
@@ -84,19 +74,10 @@ li{
 }
  
 .a_leftMenu{
-	padding:8px 80px 8px 35px;
-	background: red;
-	
-}
-
-.leftMenu li{
+	padding:8px 35px;
 	border: 1px #c8c8c8 solid;
-	padding-top:8px;
-	padding-bottom: 8px;
 	color: #2c2c2c;
- 	display:block;
- 	background: blue;
- 	
+	display:block;	
 }
 
 .a_leftMenu:hover{
@@ -110,7 +91,7 @@ li{
 	height: 401px;
 	border: 1px #c8c8c8 solid;
 	text-align: center;
-	margin-right: 0px;
+	/*margin-right: 0px;*/
 	margin-top: 36px;
 }
 
@@ -127,29 +108,33 @@ li{
 	color: #2c2c2c;	
 }
 
-
 .footerDivLeft{
 	width: 700px;
-	height: 42px;
+	height: 41px;
 	margin-left:46px;
 	background: #e1e1e1;
 	float: left;
 }
 
-.footerLi li{
- 	padding:  11px 35px;
- 	display: inline-block;
-	font-size: 14px;
+.a_menu_down{
+	padding:  12px 35px 11px 35px;
 	color: #2c2c2c;
 }
 
-.footerLi li:hover{
+.footerLi li{
+ 	padding-top: 13px;
+ 	display: inline-block;
+	font-size: 14px;
+	
+}
+
+.a_menu_down:hover{
 	text-decoration: underline;
 }
 
 .footerDivRight{
 	width: 269px;
-	height: 42px;
+	height: 41px;
 	margin-right:45px;
 	background: #e1e1e1;
 	float: right;
