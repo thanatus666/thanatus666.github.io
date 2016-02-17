@@ -3,15 +3,14 @@
 	padding: 0px;
 }
 
-a{
-	text-decoration: none;
-	font-size: 14px;
-	color: white;
-}
-
 body{
 	background: #f9f9f9;
 	font-family: 'Open Sans', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	font-size: 14px;
 }
 
 .mainDiv{
@@ -25,13 +24,11 @@ body{
 
 .headerDiv{
 	margin-left: 46px;
-	margin-top: 49px;
-	margin-bottom: 40px;
 }
 
 .menuDiv{
 	width: 969px;
-	height: 43px;
+	height: 41px;
 	margin-left:46px;
 	background: linear-gradient(90deg,  #444343, #5e5e5e);
 }
@@ -46,24 +43,34 @@ li{
  list-style:none;
 }
  
-
-.menu li{
- 	padding:  11px 35px;
- 	display: inline-block;
-	font-size: 14px;
+.a_menu{
+	padding: 10px 35px;
 	color: white;
 	border: 1px rgba(255,255,255,0) solid ;
 }
 
-.menu li:hover{
+.menu li{
+ 	padding-top: 11px;
+ 	display: inline-block;
+	font-size: 14px;
+	color: white;
+}
+
+/*.menu li:hover{
+	background: linear-gradient(90deg,  #4a4a4a, #2e2e2e);
+	border-left: 1px #838383 solid;
+	border-right: 1px #838383 solid;
+}
+*/
+.a_menu:hover{
 	background: linear-gradient(90deg,  #4a4a4a, #2e2e2e);
 	border-left: 1px #838383 solid;
 	border-right: 1px #838383 solid;
 }
 
-li:first-child {
+/*li:first-child {
 	padding-left: 25px;
-}
+}*/
 
 .leftList{
 	float: left;
@@ -76,16 +83,26 @@ li:first-child {
 	float: right;
 }
  
-.leftMenu li{
-	color: #2c2c2c;
- 	display:block;
- 	padding:8px 25px;
- 	border: 1px #c8c8c8 solid;
+.a_leftMenu{
+	padding:8px 80px 8px 35px;
+	background: red;
+	
 }
 
-.leftMenu li:hover{
+.leftMenu li{
+	border: 1px #c8c8c8 solid;
+	padding-top:8px;
+	padding-bottom: 8px;
+	color: #2c2c2c;
+ 	display:block;
+ 	background: blue;
+ 	
+}
+
+.a_leftMenu:hover{
 	background: #f9f9f9;
-	padding-left: 35px;
+	padding-left: 50px;
+	padding-right: 65px;
 }
 
 .borderDiv{
