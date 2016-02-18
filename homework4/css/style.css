@@ -17,21 +17,177 @@ li{
  list-style:none;
 }
 
-.mainDiv{
+.clearfix{
+  clear: both;
+}
+
+.topDiv{
   margin: 0 auto;
   width: 1000px;
-  height: 980px;
+  height: 175px;/*980px;*/
   background: white;
   margin-top: 38px;
-  border: solid 1px #cecece;
-  box-shadow: 0 0 10px grey;*/
+  /*border: solid 1px #cecece;*/
+  box-shadow: 0 0 10px black;*/
 
 }
 
-.mainMenu{
-
+/*  LOGO */
+.logo{
+  float: left;
+  width: 308px;
+  height: 164px;
+  background: url('../img/logo.png');
 }
 
+.logoText{
+  display: block;
+  padding: 110px 0 40px 100px;
+  font-size: 12px;
+  color: #128aa7;
+}
+
+.leftBlock{
+  float: right;
+}
+
+/* Contacts */
+.contact{
+  margin-left: 260px;
+  margin-top: 8px;
+  margin-right: 31px;
+  font-size: 12px;
+  color: #128aa7;
+}
+
+.contact p{
+  padding-top: 5px;
+}
+
+/* Countrys */
+.countrys{
+  margin-right: 35px;
+  margin-top: 30px;
+}
+
+.countrys li{
+  display: inline-block;
+}
+
+.country{
+  display: block; 
+  width: 60px;
+  height: 48px;
+  text-align: center;
+  font-size: 10px;
+  text-decoration: underline;
+  color :#128aa7; 
+  padding-top:45px;
+}
+
+.india{
+  background: url('../img/india.png') no-repeat;
+}
+
+.nepal{
+  background: url('../img/nepal.png') no-repeat;
+}
+
+.tibet{
+  background: url('../img/tibet.png') no-repeat;
+}
+
+.butan{
+  background: url('../img/butan.png') no-repeat;
+}
+
+.lanka{
+  background: url('../img/lanka.png') no-repeat;
+}
+
+.maldivi{
+  background: url('../img/maldivi.png') no-repeat;
+}
+
+/*  IMAGE */
+
+.imgDiv{
+  margin: 0 auto;
+  margin-top: -32px;
+  width: 1000px;
+  height: 237px;/*980px;*/
+  background: url('../img/image.png');
+  /*border: solid 1px #cecece;*/
+  box-shadow: 0 0 10px black*/
+}
+
+/*  Main menu  */
+.mainDiv{
+  margin: 0 auto;
+  margin-top: 1px;
+  width: 1000px;
+  height: 25px;/*980px;*/
+  background-color: #303030;
+  box-shadow: 0 0 10px black;*/
+}
+
+ul {
+    /*display: block;
+    /*margin: 0;
+    padding: 0;
+    list-style: none;*/
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    /*padding: 10px;*/
+    padding-top: 2px;
+    padding-left: 65px;
+    color: white;
+    font-size: 14px;
+    background-color: #303030;
+    /*text-decoration: none;*/
+}
+/*ul.menu > li > a:hover {
+    background-color: black;
+}*/
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid red;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+/* Footer  */
 .footer{
   padding: 8px;
   text-align: center;
