@@ -67,7 +67,7 @@ li{
 /* Countrys */
 .countrys{
   margin-right: 35px;
-  margin-top: 30px;
+  margin-top: 30px;*/
 }
 
 .countrys li{
@@ -77,7 +77,7 @@ li{
 .country{
   display: block; 
   width: 60px;
-  height: 48px;
+  height: 12px;
   text-align: center;
   font-size: 10px;
   text-decoration: underline;
@@ -113,7 +113,7 @@ li{
 
 .imgDiv{
   margin: 0 auto;
-  margin-top: -32px;
+  margin-top: 1px;
   width: 1000px;
   height: 237px;/*980px;*/
   background: url('../img/image.png');
