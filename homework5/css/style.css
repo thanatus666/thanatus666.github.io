@@ -1,0 +1,179 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+    font-family: "Helvetica Neue"; 
+    src: url(../fonts/HelveticaNeueCyr-Thin.otf); 
+   }
+
+body{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-size: 14px;
+  
+}
+a{
+  color: white;
+}
+
+li{
+ list-style:none;
+ display: inline-block;
+}
+
+ul{
+  margin-left: 466px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.wrapper{
+  width: 1215px;
+  height: 1064px;
+  margin: 0px auto;
+}
+
+/* Menu */
+.menu_bg{
+  width: 1215px;
+  height: 36px;
+  background: url(../img/bgmenu.png);
+}
+
+.menu{
+  float: left;
+}
+
+li a{
+  color:  #66ccff;
+  line-height: 36px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover{
+  font-weight: bold;
+  background: #6699cc;
+  color: white;
+}
+
+.flag{
+  display: block;
+  margin-left: 15px;
+  padding-left: 46px;
+  padding-right: 15px;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  border-left: 1px solid #6699cc;
+  background: url("../img/flag.png") no-repeat;
+  color: white;
+  text-decoration: none;
+}
+
+.block{
+  padding-left: 15px;
+  float: left;
+  width: 191px;
+  height: 36px;
+  line-height: 36px;
+  background: url("../img/block.png") no-repeat;
+  color: white;
+}
+
+/* Content */ 
+.wrapper_bg{
+  position: relative;
+  width: 1215px;
+  height: 1028px;
+  background: url(../img/bground.png);
+}
+
+.cadastre{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 50%;
+  margin: -25% 0 0 -25%;
+
+  height: 614px;
+  width: 561px;
+}
+
+.header{
+  width: 561px;
+  height: 63px;
+  background: rgba(51,51,51,0.63);
+}
+
+.header p{
+font-size: 24px;
+text-align: center;
+line-height: 62px;
+color: white;
+}
+
+.account{
+  margin-top: 2px;
+  width: 561px;
+  height: 549px;
+  background: rgba(51,51,51,0.63);
+  text-align: center;
+}
+
+.facebook{
+  display: block;
+  padding-top: 35px;
+}
+
+.OU{
+  padding-top: 30px;
+}
+
+.field{
+  height: 35px;
+  width: 274px;
+  margin-top: 18px;
+  padding-left: 17px;
+  background: black;
+  border-color: black;
+  box-shadow: 0 1px 1px #333333;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.field:first-child{
+  margin-top: 24px;
+}
+
+.field:focus{
+  background: #336699;
+  box-shadow: 1px 1px 1px #336699;
+  border-color: rgba(51,102,153,0.1);
+}
+
+.check{
+  padding-top: 18px;
+  padding-left: 135px;
+  text-align: left;
+  color: #cccccc;
+}
+
+.button{
+  width: 151px;
+  height: 36px;
+  margin-top: 24px;
+  background: url("../img/button.png");
+  border-color: #6699cc;
+  border-radius: 5px;
+}
+
+.footer{
+  margin-top: 17px;
+  font-size: 11px;
+  color: #cccccc;
+}
