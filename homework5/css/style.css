@@ -11,8 +11,8 @@
 body{
   font-family: 'Helvetica Neue', arial, sans-serif;
   font-size: 14px;
-  background: url("../img/bground.png");
-  background-size: cover;
+  background: url("../img/bground.png") no-repeat;
+  background-size: 100%;
 }
 
 a{
@@ -24,25 +24,25 @@ li{
  display: inline-block;
 }
 
-ul{
-  margin-left: 466px;
-}
-
 .clearfix{
   clear: both;
 }
 
 .wrapper{
-  width: 1215px;
-  height: 1064px;
+  width: 100%;
+  height: 100%;
   margin: 0px auto;
 }
 
 /* Menu */
 .menu_bg{
-  width: 1215px;
+  width: 100%;
   height: 36px;
-  background: url(../img/bgmenu.png);
+  background: url("../img/bgmenu.png");
+}
+
+.menuDiv{
+  float: right;
 }
 
 .menu{
@@ -77,7 +77,7 @@ li a:hover{
 }
 
 .block{
-  padding-left: 15px;
+  padding-left: 20px;
   float: left;
   width: 191px;
   height: 36px;
@@ -88,21 +88,12 @@ li a:hover{
 
 /* Content */ 
 .wrapper_bg{
-  position: relative;
-  width: 1215px;
-  height: 1028px;
-}
-
-.cadastre{
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  height: 50%;
-  width: 50%;
-  margin: -25% 0 0 -25%;
-
   height: 614px;
   width: 561px;
+  margin: -280px 0 0 -307px;
 }
 
 .header{
