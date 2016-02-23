@@ -11,8 +11,10 @@
 body{
   font-family: 'Helvetica Neue', arial, sans-serif;
   font-size: 14px;
-  
+  background: url("../img/bground.png");
+  background-size: cover;
 }
+
 a{
   color: white;
 }
@@ -89,7 +91,6 @@ li a:hover{
   position: relative;
   width: 1215px;
   height: 1028px;
-  background: url(../img/bground.png);
 }
 
 .cadastre{
@@ -163,7 +164,7 @@ color: white;
   color: #cccccc;
 }
 
-.button{
+.submit{
   width: 151px;
   height: 36px;
   margin-top: 24px;
