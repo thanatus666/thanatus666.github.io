@@ -1,0 +1,27 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+.loginDiv{
+  
+}
+
+a{
+  color: white;
+}
+
+li{
+ list-style:none;
+ display: inline-block;
+}
+
+.clearfix{
+  clear: both;
+}
+
