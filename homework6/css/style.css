@@ -8,20 +8,254 @@ body{
   font-size: 14px;
 }
 
-.loginDiv{
-  
+.wrapper{
+  height: 1311px;
+  width: 907px;
+  margin: 0 auto;
 }
 
 a{
-  color: white;
+  color: black;
 }
+
 
 li{
  list-style:none;
- display: inline-block;
+}
+
+.main_menu li{
+  display: inline-block;
+}
+
+table{
+  text-align: center;
 }
 
 .clearfix{
   clear: both;
 }
 
+.loginHeader{
+  float: left;
+  margin-top: 20px;
+  margin-left: 2px;
+  height: 28px;
+  width: 907px;
+/*  background: yellow;*/
+}
+
+
+.telefon{
+  letter-spacing:0.5px;
+  width: 300px;
+  height: 28px;
+  float: left;
+  font-size: 18px;
+  padding-left: 28px;
+  color: #666666;
+  background: url("../img/telefon.png") no-repeat;
+  line-height: 28px;
+}
+
+.login{
+  float: left;
+  margin-left: -17px;
+  margin-top: -2px;
+  width: 498px;
+  height: 28px;
+  /*background: url("../img/login.png");*/
+  background: linear-gradient(to top, #003366, #336699);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(153,153,153,1);
+}
+
+.login_form li{
+  float: left;
+}
+
+.a_login_form{
+  text-decoration: none;
+  color: white;
+  line-height: 28px;
+  font-size: 11px;
+  font-family: "Lucida Sans", sans-serif; 
+}
+
+.separator{
+  color: white;
+  line-height: 28px;
+}
+
+.password{
+  color: #cccccc;
+  text-decoration: underline;
+  line-height: 28px;
+  font-size: 12px;
+  font-family: "Lucida Sans", sans-serif; 
+}
+
+.login_text{
+  margin-top: 5px;
+  margin-left: 25px;
+  padding-left: 7px;
+  width: 108px;
+  height: 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+.login_text:focus{
+  border-radius: 3px;
+}
+
+.site_map{
+  float: left;
+  width: 95px;
+  height: 27px;
+  background: url("../img/site_map.png");
+}
+
+.logo{
+  margin-top: 7px;
+  display: block;
+  height: 236px;
+  width: 906px;
+  background: url("../img/logo.png") no-repeat;
+}
+
+.main_menu{
+  margin-left:123px; 
+}
+
+.menu{
+  margin-top: 7px;
+  margin-left: -2px;
+  width: 913px;
+  height: 37px;
+  background: url("../img/menu.png") no-repeat;
+}
+
+.a_main_menu{
+  text-decoration: none;
+  color: #99cccc;
+  font-size: 14px;
+  font-family: "Lucida Sans", sans-serif; 
+  line-height: 32px;
+  padding: 5px 10px 5px 10px;
+  /*background: red;*/
+}
+
+.a_main_menu:hover{
+  background:linear-gradient(to top,  #336699, #003366);
+  color: white;
+  border-radius: 20px;
+}
+
+.search{
+  width: 907px;
+  height: 130px;
+  margin-top: 10px;
+}
+
+.search_car{
+  float: left;
+  width: 414px;
+  height: 130px;
+  border: 1px grey;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(153,153,153,1);
+  
+}
+
+.search_bus{
+  float: left;
+  width: 192px;
+  height: 130px;
+  margin-left: 10px;
+  border: 1px grey;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(153,153,153,1);
+}
+
+.search_disc{
+  float: left;
+  width: 266px;
+  height: 130px;
+  margin-left: 10px;
+  border: 1px grey;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(153,153,153,1);
+}
+
+.search_disc_p1{
+  float: left;
+}
+
+.search_disc_p2{
+  float: right;
+}
+
+
+/* -- main content -- */
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.main_content{
+  margin: 0 auto;
+  width: 526px;
+  height: 626px;
+  /*background: #99cccc;*/
+  background: linear-gradient(to top,  #333366, #cccccc);
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.a_main_content{
+  
+}
+
+.name_brend{
+  font-size: 15px;
+  font-family: "Lucida Sans", sans-serif; 
+  color: #336699;
+}
+
+.image_wheel{
+  width: 136px;
+  height: 128px;
+  background: white;
+  /*background: url("../img/wheel1.png") no-repeat;*/
+  border: 1px grey;
+  border-radius: 20px;
+  margin: 3px 23px 3px 12px
+}
+
+.name_wheel{
+  color: #333333;
+  font-size: 13px;
+  font-family: "Lucida Sans", sans-serif; 
+}
+
+.price_wheel{
+   font-size: 15px;
+  font-family: "Lucida Sans", sans-serif; 
+  color: #336699;
+}
+
+
+/* -- Footer -- */
+.brends{
+  margin: 0 auto;
+}
+
+.footer{
+  width: 909px;
+  height: 101px;
+  background: url("../img/footer.png");
+}
