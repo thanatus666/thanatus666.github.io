@@ -8,6 +8,14 @@ body{
   font-size: 14px;
 }
 
+span{
+  font-size: 11px;
+}
+
+p{
+  font-size: 8px;
+}
+
 .wrapper{
   height: 1311px;
   width: 907px;
@@ -243,11 +251,65 @@ table{
 }
 
 .price_wheel{
-   font-size: 15px;
+  font-size: 15px;
   font-family: "Lucida Sans", sans-serif; 
   color: #336699;
 }
 
+/*  **** left sidebar  **** */
+.catalog{
+  margin: 5px 10px;
+  width: 182px;
+  height: 24px;
+  border: 1px #003366;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px #003366;
+  
+}
+.catalog a{
+  padding: 3px 5px;
+  font-size: 15px;
+  font-family: "Lucida Sans", sans-serif; 
+  color: #003366;
+  text-decoration: none;
+  background: url("../img/file.png") no-repeat;
+}
+
+.circle{
+  width: 147px;
+  height: 27px;
+  border: 1px #003366;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px #003366;
+}
+
+.circle a{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: "Lucida Sans", sans-serif; 
+  color: #003366;
+  text-decoration: none;
+  background: url("../img/circle.png") no-repeat; 
+}
+
+.name li a{
+  padding-left: 10px;
+ text-decoration: none;
+ background: url("../img/marker.png") no-repeat; 
+ line-height: 24px;
+ font-family: "Lucida Sans", sans-serif; 
+ color: #336666;
+ font-size: 13px;
+}
+
+.name li a:hover{
+  color: #003366;
+  font-size: 14;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  background: url("../img/active_marker.png") no-repeat; 
+}
 
 /* -- Footer -- */
 .brends{
