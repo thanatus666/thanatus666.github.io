@@ -117,10 +117,25 @@ table{
 }
 
 .site_map{
+  margin-left: 10px;
+  padding-left: 5px;
   float: left;
-  width: 95px;
-  height: 27px;
-  background: url("../img/site_map.png");
+  width: 81px;
+  height: 25px;
+  background: url("../img/site_map.png") no-repeat;
+}
+
+.site_map ul li{
+  float: left;
+}
+
+.a_site_map{
+  margin: 3px 0px 0 5px;
+  padding: 0 3px 0 3px; 
+  display: block;
+  width: 10px;
+  height: 15px;
+  background: rgba(0,255,0,0.3);
 }
 
 .logo{
@@ -131,6 +146,8 @@ table{
   background: url("../img/logo.png") no-repeat;
 }
 
+/* ********* MAIN MENU ************ */
+
 .main_menu{
   margin-left:123px; 
 }
@@ -140,7 +157,11 @@ table{
   margin-left: -2px;
   width: 913px;
   height: 37px;
-  background: url("../img/menu.png") no-repeat;
+  background: linear-gradient(to top, #000000, #666666);
+  box-shadow: 0 2 10 #000;
+  border:1px solid #000033;
+  border-radius: 5px;
+  /*background: url("../img/menu.png") no-repeat;*/
 }
 
 .a_main_menu{
@@ -158,6 +179,30 @@ table{
   color: white;
   border-radius: 20px;
 }
+
+.basket{
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 11px;
+  color: #999999;
+  background: url("../img/basket.png") no-repeat;
+}
+
+.summa{
+  
+  text-decoration: none;
+  font-size: 11px;
+  color: #999999;
+}
+
+.numbers{
+  
+  text-decoration: none;
+  font-size: 12px;
+  color: #006699;
+}
+
+/* ********** SEARCH WINDOWS ********** */
 
 .search{
   width: 907px;
@@ -204,7 +249,7 @@ table{
 }
 
 
-/* -- main content -- */
+/* ********** MAIN CONTENT ********** */
 
 .left{
   float: left;
@@ -263,16 +308,22 @@ table{
   height: 24px;
   border: 1px #003366;
   border-radius: 30px;
-  box-shadow: 1px 1px 10px #003366;
+  box-shadow: 0px 2px 10px #003366;
   
 }
 .catalog a{
-  padding: 3px 5px;
-  font-size: 15px;
+  display: block;
+  margin: 3px 0 0 1px;
+  padding: 1px 0 0 20px;
+  letter-spacing: 0.1px;
+  font-size: 13px;
   font-family: "Lucida Sans", sans-serif; 
   color: #003366;
   text-decoration: none;
+  line-height: 26px;
   background: url("../img/file.png") no-repeat;
+  vertical-align: middle;
+
 }
 
 .circle{
@@ -284,22 +335,25 @@ table{
 }
 
 .circle a{
+  display: block;
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Lucida Sans", sans-serif; 
   color: #003366;
   text-decoration: none;
   background: url("../img/circle.png") no-repeat; 
+  vertical-align: middle;
 }
 
 .name li a{
+  display: block;
   padding-left: 10px;
- text-decoration: none;
- background: url("../img/marker.png") no-repeat; 
- line-height: 24px;
- font-family: "Lucida Sans", sans-serif; 
- color: #336666;
- font-size: 13px;
+  text-decoration: none;
+  background: url("../img/marker.png") no-repeat; 
+  line-height: 24px;
+  font-family: "Lucida Sans", sans-serif; 
+  color: #336666;
+  font-size: 13px;
 }
 
 .name li a:hover{
