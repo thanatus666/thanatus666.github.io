@@ -7,5 +7,74 @@ body{
   /*font-family: 'League Gothic', arial;
   font-family: 'Open Sans Light', arial;
   font-family: 'Open Sans Extrabold', arial;*/
+  background: url("../img/bg.jpg") center top no-repeat;
+  background-size: cover;
 }
 
+@font-face {
+    font-family: "league_gothic";
+    src: url("../fonts/League_Gothic.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans);*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+.wrapper{
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header__bg{
+  /*background: url("../img/bg.jpg") center top no-repeat;
+  background-size: cover;*/
+  /*height: 100%;*/
+  width: 100%;
+  height: 100%;
+}
+
+.logo{
+  float: left;
+}
+
+.logo__link{
+  display: block;
+  width: 152px;
+  height:58px;
+  margin-top: 40px;
+  padding: 40px 0px 20px 0px;
+  background: url("../img/logo.png") no-repeat center top;
+}
+
+.menu{
+  float: right;
+}
+
+.menu__list{
+  margin-top: 68px;
+}
+
+.menu__li{
+  /*float: left;*/
+  list-style: none;
+  
+}
+
+.menu__link{
+  text-decoration: none;
+  font-family: "league_gothic";
+  font-size: 24px;
+  color: white;
+  text-shadow:grey 2px 2px 4px;
+  padding: 5px 4px 5px 4px;
+  margin-right: 42px;
+}
+
+.menu__link:hover{
+  border-bottom: 4px solid #ffccff;
+}
