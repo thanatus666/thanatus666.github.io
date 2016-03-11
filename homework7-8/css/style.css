@@ -7,8 +7,8 @@ body{
   /*font-family: 'League Gothic', arial;
   font-family: 'Open Sans Light', arial;
   font-family: 'Open Sans Extrabold', arial;*/
-  background: url("../img/bg.jpg") center top no-repeat;
-  background-size: cover;
+/*  background: url("../img/bg.jpg") center top no-repeat;
+  background-size: cover;*/
 }
 
 @font-face {
@@ -24,31 +24,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-.wrapper{
-  width: 960px;
-  height: 100%;
-  margin: 0 auto;
+.top__section{
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover; 
 }
 
 .header__bg{
-  /*background: url("../img/bg.jpg") center top no-repeat;
-  background-size: cover;*/
-  /*height: 100%;*/
-  width: 100%;
-  height: 100%;
+  max-width: 960px;
+  margin: 0 auto 50px;
+  padding: 0 5px;
+  /*overflow: hidden;*/
 }
+
+.clear__both:after{
+ content:'';
+ display:block;
+ clear:both;
+}
+
 
 .logo{
   float: left;
+  width: 152px;
+  height:58px;
+  margin-top: 40px;
+  background: url("../img/logo.png") no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
 .logo__link{
   display: block;
-  width: 152px;
-  height:58px;
-  margin-top: 40px;
-  padding: 40px 0px 20px 0px;
-  background: url("../img/logo.png") no-repeat center top;
+  height: 100%;
 }
 
 .menu{
@@ -72,9 +79,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   text-shadow:grey 2px 2px 4px;
   padding: 5px 4px 5px 4px;
-  margin-right: 42px;
+  margin-right: 3.85%;
 }
 
 .menu__link:hover{
   border-bottom: 4px solid #ffccff;
+}
+
+.gallery{
+  background: rgba(0,0,0,0.2);
+}
+
+.gallery__holder{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5px;
+  /*overflow: hidden;*/
+}
+
+.gallery__iphone{
+  float: right;
+  width: 28.54%;
+  margin: -15px 20px 0 30px;
+}
+
+.gallery__text{
+  padding:82px 0 82px 0;
+  overflow: hidden;
+  font-family: "league_gothic";
+}
+
+.gallery__h1{
+  color: white;
+  font-size: 60px;
+}
+
+.gallery__h2{
+  color: #ffccff;
+  font-size: 32px;
+}
+
+.gallery__h3{
+  font-family: "Open Sans Light";
+  color: white;
+  font-size: 18px;
+}
+
+.radio{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.radio__img{
+  float: right;
+  margin: 93px 165px 55px 0;
 }
