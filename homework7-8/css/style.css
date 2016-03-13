@@ -24,6 +24,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
+.clear__both:after{
+ content:'';
+ display:block;
+ clear:both;
+}
+
+
 .top__section{
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover; 
@@ -35,13 +42,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0 5px;
   /*overflow: hidden;*/
 }
-
-.clear__both:after{
- content:'';
- display:block;
- clear:both;
-}
-
 
 .logo{
   float: left;
@@ -80,6 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow:grey 2px 2px 4px;
   padding: 5px 4px 5px 4px;
   margin-right: 3.85%;
+  border-bottom: 4px solid rgba(255,255,255,0);
 }
 
 .menu__link:hover{
@@ -130,7 +131,224 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0 auto;
 }
 
-.radio__img{
+.radio__white{
   float: right;
   margin: 93px 165px 55px 0;
+}
+
+.about__section{
+  background: linear-gradient(to top, #322539, #745083);
+  height: 338px;
+  border-top:2px solid #33253a;
+  border-bottom:2px solid #33253a;
+}
+
+.abouts{
+  max-width: 960px;
+  margin: 78px auto;
+  padding: 0 5px;
+}
+
+.right__about{
+  float: left;
+  width: 268px;
+}
+
+.mid__about{
+  float: left;
+  width: 268px;
+}
+
+.left__about{
+  float: left;
+  width: 268px;
+}
+
+.right__icons{
+  float: left;
+  width: 28px;
+  height: 27px;
+  background: url("../img/icons.png") -58px 0;
+}
+
+.mid__icons{
+  float: left;
+  width: 28px;
+  height: 27px;
+  background: url("../img/icons.png") -29px 0;
+}
+
+.left__icons{
+  float: left;
+  width: 28px;
+  height: 27px;
+  background: url("../img/icons.png") 0 0;
+}
+
+.about__text{
+  float: right;
+  width: 222px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.h__about{
+  font-size: 30px;
+  color: white;
+  font-family: "league_gothic";
+  text-shadow: 1px 1px 2px black;
+}
+
+.txt__about{
+  font-family: "Open Sans Light";
+  color: white;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px black; 
+}
+
+.more__about{
+  padding-top:20px; 
+  float: right;
+  font-size: 18px;
+  color: white;
+  font-family: "league_gothic";
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+}
+
+.more__about:hover{
+  text-shadow: 1px 1px 8px rgba(255,255,255,0.8);
+}
+
+.article__section{
+  background: #f9f9f9;
+  border-bottom: 1px solid white;
+}
+
+.wrapper__article{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5px; 
+}
+
+.post__article{
+  width: 50%;
+  float: left;
+}
+
+.bg__post__article{
+  height: 294px;
+  margin-top: 100px;
+  background: url("../img/post.png") no-repeat top;
+}
+
+.list__post{
+  margin: 32px 0 0 63px;
+}
+
+.elem__post{
+  list-style: none;
+  float: left;
+}
+
+.black__link__post{
+  text-decoration: none;
+  font-family: "league_gothic";
+  font-size: 30px;
+  color: #454545;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.pink__link__post{
+  text-decoration: none;
+  font-family: "league_gothic";
+  font-size: 30px;
+  color: #edbfff;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.txt__post__article{
+  padding: 17px 70px 0 63px;
+  color: #454545;
+  font-size: 16px;
+  font-family: "Open Sans Light";
+
+}
+
+.radio__black{
+  margin: 21px auto;
+  width: 85px;
+  height: 20px;
+  background: url("../img/radio_black.png");
+}
+
+.blog__article{
+  margin-top: 100px; 
+  width: 50%;
+  float: right;
+}
+
+.line1__blog{
+  margin-top: 16px;
+  width: 430px;
+  height: 49px;
+  background: url("../img/blog.png") no-repeat 0 0;
+}
+
+.line2__blog{
+  margin-top: 16px;
+  width: 430px;
+  height: 49px;
+  background: url("../img/blog.png") no-repeat 0 -50px;
+}
+
+.line3__blog{
+  margin-top: 16px;
+  width: 430px;
+  height: 49px;
+  background: url("../img/blog.png") no-repeat 0 -101px;
+}
+
+.bold__blog{
+  text-decoration: none;
+  margin-left: 55px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  color: #454545;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.light__blog{
+  margin-left: 55px;
+  font-family: "Open Sans Light";
+  font-size: 16px;
+  color: #454545;
+  text-shadow: 0 0 1px rgba(255,255,255,1);
+}
+
+.more__here{
+  float: right;
+  color: #454545;
+  text-decoration: none;
+  font-family: "league_gothic";
+  font-size: 18px;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.logos__section{
+  border-top: 1px solid #d8d8d8;
+  background: #f9f9f9; 
+}
+
+.logos__wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logos__img{
+  height: 75px;
+  width: 775px;
+  margin: 25px auto;  
+  background: url("../img/logos.png") no-repeat;
 }
