@@ -352,3 +352,124 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 25px auto;  
   background: url("../img/logos.png") no-repeat;
 }
+
+.footer__section{
+  background: #ececec;
+}
+
+.footer__wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5px; 
+}
+
+.footer__column{
+  width: 30%;
+  float: left;
+  height: 157px;
+  overflow: hidden;
+}
+
+.pingbuller{
+
+}
+
+.pingbull{
+  float: left;
+  color: #454545;
+  font-family: "league_gothic";
+  font-size: 48px;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.er{
+  float: left;
+  color: #b9b9b9;
+  font-family: "league_gothic";
+  font-size: 48px;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.copyright{
+  padding-top: 12px;
+  color: #c5c5c5;
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 16px;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.footer__text{
+  padding-right: 3%;
+  padding-top: 12px;
+  color: #787878;
+  font-family: "Open Sans Light";
+  font-size: 16px;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.footer__h{
+  color: #454545;
+  font-family: "league_gothic";
+  font-size: 30px;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}
+
+.footer__menu__bg{
+  background: url("../img/footer_bg.jpg") no-repeat;
+  background-size: cover; 
+}
+
+.footer__menu__wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5px; 
+}
+
+.footer__menu{
+  float: left;
+}
+
+.designed{
+  float: right;
+}
+
+.designed--light{
+  float: left;
+  font-family: "Open Sans Light";
+  font-size: 12px;
+  color: white;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+  font-weight: lighter;
+}
+
+.designed--bold{
+  float: left;
+  font-family: "Open Sans Light";
+  font-size: 12px;
+  color: white;
+  text-shadow: 0px 0px 1px rgba(255,255,255,1);
+  font-weight: bold;
+}
+
+.footer__menu{
+  margin:20px 0 20px 0;
+}
+
+.footer__menu__list{
+  float: left;
+}
+
+.footer__menu__li{
+  list-style: none;
+}
+
+.footer__menu__link{
+  text-decoration: none;
+  font-family: "league_gothic";
+  font-size: 20px;
+  color: white;
+  text-shadow: 0px 2px 2px black;
+  /*padding: 10px 4px 10px 4px;*/
+  margin-right: 3.85%;
+}
