@@ -362,13 +362,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer__wrapper{
   max-width: 960px;
   margin: 0 auto;
-  padding: 98px 5px 20px 5px; 
+  padding: 98px 5px 100px 5px; 
 }
 
 .footer__column{
   width: 30%;
   float: left;
-  height: 157px;
+  height: 206px;
   overflow: hidden;
 }
 
@@ -393,7 +393,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .copyright{
-  padding-top: 12px;
+  padding-top: 4px;
   color: #c5c5c5;
   font-family: "Georgia";
   font-style: italic;
@@ -434,6 +434,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .designed{
   float: right;
+  padding-top: 25px;
 }
 
 .designed--light{
