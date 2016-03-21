@@ -13,7 +13,7 @@
           <span class="n_tel">(044)123-45-67 (044)567-89-10</span>
         </div>
         <div class="login">
-          <form>
+          <form method="post" action="#">
             <ul class="login_form">
               <li>
                 <div class="login_img">
@@ -212,50 +212,52 @@
       </aside>
 
       <aside class="right">
-        <div class="brend">
-          <a  href="">БРЕНДЫ:</a>
-        </div>
-        <div class="circle_right">
-          <a href="">ШИНЫ</a>
-        </div>
-          <ul class="check">
-            <li>
-              <label>
-                <input type="checkbox"><span class="pading_check">Бренд 1</span>
-              </label>
-              </li>
-            <li>
-              <label>
-                <input type="checkbox"><span class="pading_check">Бренд 2</span>
-              </label>
-              </li>
-            <li>
-              <label>
-                <input type="checkbox"><span class="pading_check">Бренд 3</span>
-              </label>
-            </li>
-          </ul>
-          <div id="discs" class="circle_right">
-            <a href="">ДИСКИ</a>
+        <form method="post" action="#">
+          <div class="brend">
+            <a  href="">БРЕНДЫ:</a>
           </div>
-          <ul class="check">
-            <li>
-              <label>
-                <input type="checkbox"><span class="pading_check">Бренд 1</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox"><span class="pading_check">Бренд 2</span>
-              </label>
-            </li>
-            <li>
-              <label>
-               <input type="checkbox"><span class="pading_check">Бренд 3</span>
-              </label>
-            </li>
-          </ul>
-          <input type="submit" value="ВЫБРАТЬ">
+          <div class="circle_right">
+            <a href="">ШИНЫ</a>
+          </div>
+            <ul class="check">
+              <li>
+                <label>
+                  <input value="brend1" type="checkbox"><span class="pading_check">Бренд 1</span>
+                </label>
+                </li>
+              <li>
+                <label>
+                  <input value="brend1" type="checkbox"><span class="pading_check">Бренд 2</span>
+                </label>
+                </li>
+              <li>
+                <label>
+                  <input value="brend1" type="checkbox"><span class="pading_check">Бренд 3</span>
+                </label>
+              </li>
+            </ul>
+            <div id="discs" class="circle_right">
+              <a href="">ДИСКИ</a>
+            </div>
+            <ul class="check">
+              <li>
+                <label>
+                  <input value="brend1" type="checkbox"><span class="pading_check">Бренд 1</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input value="brend1" type="checkbox"><span class="pading_check">Бренд 2</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                 <input value="brend1" type="checkbox"><span class="pading_check">Бренд 3</span>
+                </label>
+              </li>
+            </ul>
+            <input name="select" type="submit" value="ВЫБРАТЬ">
+          </form>
       </aside>
       <section class="main_content">
         <div class="one_column">

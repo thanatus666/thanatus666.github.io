@@ -349,7 +349,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .logos__img{
   height: 75px;
   width: 775px;
-  margin: 25px auto;  
+  margin: 0px auto;  
+  margin-top: 25px;
+  padding-bottom: 25px;
   background: url("../img/logos.png") no-repeat;
 }
 
@@ -360,7 +362,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer__wrapper{
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 5px; 
+  padding: 98px 5px 20px 5px; 
 }
 
 .footer__column{
