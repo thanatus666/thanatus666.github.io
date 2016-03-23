@@ -1,7 +1,16 @@
 var arr = [];
-for ( var i = 0; i < 5; i++ ){
- arr.push( prompt('Введите имя номер ' + (i+1), arr[i] ) );
-}
+var oneName;
+var i=0;
+do{
+	oneName=prompt('Введите имя номер ' + (i+1), arr[i] );
+ 	if (oneName==""){
+ 		alert('Вы ввели пустую строку, повторите ввод');
+ 	}else{
+ 		arr.push(oneName);
+ 		i++;
+ 	}
+ 	
+}while (i<5);
     
 var name = prompt('Введите ваше имя:');
 
