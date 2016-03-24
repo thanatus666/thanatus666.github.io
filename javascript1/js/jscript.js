@@ -27,7 +27,7 @@ do{
 	var x=prompt('Введите число');	
 	myTrue=false;
 
-	if (isNaN(x)) {
+	if ( isNaN(x) || (x=='') ) {
 		alert("Ошибка, Вы должны ввести число, повторите ввод!");
 		myTrue=true;	
 	};
@@ -39,7 +39,7 @@ do{
 	var y=prompt('Введите степень числа');
 	myTrue=false;
 	
-	if (isNaN(y)) {
+	if ( isNaN(y) || (y=='') ) {
 		alert("Ошибка, Вы должны ввести число, повторите ввод!");
 		myTrue=true;	
 	}else{
