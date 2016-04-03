@@ -1,0 +1,59 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma, sans-serif;
+}
+
+.container{
+	margin: 30px auto;
+	padding: 0 50px;
+	width: 560px;
+}
+
+h2{
+	text-align: center;
+}
+
+.menu{
+	padding: 20px 0 0 0;
+}
+
+.menu--item{
+	font-size: 18px;
+}
+
+.under__menu{
+	padding: 15px 0;
+}
+
+.under__menu--item{
+	font-size: 14px;
+	padding: 0  0 5px 10px;
+	list-style: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+span{
+	padding-left: 24px;
+	width: 200px;
+	height: 18px;
+	display: block;
+	background: url("../img/notcheck.jpg") no-repeat;
+}
+
+ label input[type='checkbox']:checked ~ span{
+ 	background: url("../img/check.jpg") no-repeat;	
+ }
+
+ input[type="submit"]{
+	display: block;
+	margin: 20px auto;
+	width: 300px;
+	height: 50px;
+	background-color: #b1dbe1;
+	border: 2px solid black;
+	font-size: 18px;
+}
