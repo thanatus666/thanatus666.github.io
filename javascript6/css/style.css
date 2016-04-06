@@ -1,0 +1,55 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma, sans-serif;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.container{
+	margin: 30px auto;
+	padding: 0 50px;
+	width: 600px;
+}
+
+body{
+	background: black;
+}
+
+#hour, #minut, #second, #milisecond, .points{
+	float: left;
+}
+
+#timer {
+    font-size: 84px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #000000;
+    color: red;
+    font-weight: 900;
+    border: 0px none;
+}
+
+.buttons{
+	text-align: center;
+}
+
+#split,#start,#reset{
+	font-size:40px;
+	vertical-align:middle;
+	text-align:center;
+	padding: 2px 5px;
+	margin: 20px 2px; 
+}
+
+#history{
+	font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #000000;
+    color: grey;
+    font-weight: 900;
+    border: 0px none;
+}
