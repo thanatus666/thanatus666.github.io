@@ -11,7 +11,11 @@ var second = document.getElementById("second");
 var minut = document.getElementById("minut");
 var hour = document.getElementById("hour");
 
+/* **********  OBJECT ************ */
 
+var mainPage = {
+
+};
 
 /* ********* functions ************ */
 

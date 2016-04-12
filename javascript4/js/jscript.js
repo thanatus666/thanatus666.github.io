@@ -18,33 +18,48 @@ var ol = document.createElement('ol');
 ol.classList.add('menu');
 mainForm.appendChild(ol);
 
-for(var i=1; i<=3; i++){
-    var li__ol = document.createElement('li');
-    li__ol.classList.add('menu--item');
-    li__ol.innerHTML='Вопрос №' + i;
-    ol.appendChild(li__ol);
-    var ul = document.createElement('ul');
-    ul.classList.add('under__menu');
-    li__ol.appendChild(ul);
-    for(var j=1; j<=3; j++){
-        var li = document.createElement('li');
-        li.classList.add('under__menu--item');
-        ul.appendChild(li);
-        var label = document.createElement('label');
-        li.appendChild(label);
-        var input = document.createElement('input');
-        input.setAttribute('type','checkbox');
-        input.setAttribute('value','check' + j);
-        input.setAttribute('name','check');
-        label.appendChild(input);
-        var span = document.createElement('span');
-        span.innerHTML='Вариант ответа №' + j;
-        label.appendChild(span);
-    }   
+var page = {
+    liClass : 'menu--item',
+    liHTML : 'Вопрос №',
+    ulClass :  'under__menu',
+    liUnderClass : 'under__menu--item',
 
-}
+    createLi : function(n){
+        for(var i=1; i<=n; i++){
+            var li__ol = document.createElement('li');
+            li__ol.classList.add(this.liClass);
+            li__ol.innerHTML=this.liHTML + i;
+            ol.appendChild(li__ol);
+            var ul = document.createElement('ul');
+            ul.classList.add(this.ulClass);
+            li__ol.appendChild(ul);
+            for(var j=1; j<=3; j++){
+                var li = document.createElement('li');
+                li.classList.add(this.liUnderClass);
+                ul.appendChild(li);
+                var label = document.createElement('label');
+                li.appendChild(label);
+                var input = document.createElement('input');
+                input.setAttribute('type','checkbox');
+                input.setAttribute('value','check' + j);
+                input.setAttribute('name','check');
+                label.appendChild(input);
+                var span = document.createElement('span');
+                span.innerHTML=this.liHTML + j;
+                label.appendChild(span);
+            }   
+        }
+    },     // function
+    
+    createSubmit: function(name){
+        var submit = document.createElement('input');
+        submit.setAttribute('type',"submit");
+        submit.setAttribute('value',name);
+        mainForm.appendChild(submit);        
+    }
+};
 
-var submit = document.createElement('input');
-submit.setAttribute('type',"submit");
-submit.setAttribute('value',"Проверить мои результаты");
-mainForm.appendChild(submit);
+page.createLi(3);
+page.createSubmit("Проверить мои результаты");
+
+
