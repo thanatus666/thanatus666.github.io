@@ -3,30 +3,71 @@
   <head>
     <meta charset="utf-8" />
     <title>JavaScript 4</title>
-    <meta name="description" content="JavaScript 4" />
+    <meta name="description" content="JavaScript 8" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jscript.js"></script>
   </head>
   <body>
-  	<div class="container">
-      <div class="box">
-        <div class="tabs">
-          <ul class="menu">
-            <li class="menu--link"><a href="#">Nunc tincidunt</a></li>
-            <li class="menu--link"><a href="#">Proin dolor</a></li>
-            <li class="menu--link"><a href="#">Anwan lacinia</a></li>
-          </ul>
-        </div>
-        <div class="text">
+    <div class="box">
+    	<div id="tabs">
+        <ul>
+          <li><a id="tabs-1" href="#tabs-1">Nunc tincidunt</a></li>
+          <li><a id="tabs-2" href="#tabs-2">Proin dolor</a></li>
+          <li><a id="tabs-3" href="#tabs-3">Aenean lacinia</a></li>
+        </ul>
+      </div>
+      <div class="text">
+        <div id="text__tabs-1">
           <p>
-            Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+            Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
           </p>
+        </div>
+        <div id="text__tabs-2" class="hideText">
           <p>
-            Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+            Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus e
+          </p>
+        </div>
+        <div id="text__tabs-3" class="hideText">
+          <p>
+            Mauris eleifend est et turpis. Duis id erat. Suspendisse pote
           </p>
         </div>
       </div>
+    <div class="box__form">
+      <form action="#" method="post" name="mainform">  
+        <table>
+          <tr>
+            <td>Имя</td>
+            <td>
+              <input type="text" name="div-1" placeholder='Иван'>
+            </td>
+            <td>
+              <div id='div-1'>Введите Ваше Имя!</div>
+            </td>
+          </tr>
+          <tr>
+            <td>Фамилия</td>
+            <td>
+              <input type="text" name="div-2" placeholder='Иванов'>
+            </td>
+            <td>
+              <div id='div-2'>Введите Вашу Фамилию!</div>
+            </td>
+          </tr>
+          <tr>
+            <td>Адрес</td>
+            <td>
+              <input type="text" name="div-3" placeholder='г. Киев ул. Хрещатик 1'>
+            </td>
+            <td>
+              <div id='div-3'>Введите Ваш адрес!</div>
+            </td>
+          </tr>
+        </table>
+        <input type="button" name="help" value="Показать подсказки">
+      </form>
     </div>
-    <script type="text/javascript" src="js/jscript.js"></script>
-  </body>
+  </div>
+</body>
 </html>

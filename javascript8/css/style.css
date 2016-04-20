@@ -2,48 +2,90 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 .clearfix{
   clear: both;
 }
 
-.container{
-	margin: 30px auto;
-	padding: 0 50px;
-	width: 600px;
+body {
+    background: #bbb;
+}
+#tabs {
+    margin: 20px 20px 0 20px;
+    background: #eee;
+    border-radius: 10px 10px 0 0;
 }
 
-.box{
-	background: #bbb;
-	border: 2px solid grey;
-	border-radius: 10px 10px;
+li {
+    list-style: none;
+    margin-left: 10px;
+    display: inline-block;
+}
+a {
+    font-size: 16px;
+    line-height: 34px; 
+    padding: 10px 20px;
+    border-radius: 10px 10px 5px 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+ul{
+    margin-top: 5px;
+}
+
+#tabs-1, #tabs-2, #tabs-3{
+    background: #ddd;
+}
+
+#tabs-1{
+    background: #ada;    
 }
 
 .text{
-	font-family: Verdana,Arial,sans-serif;
-    font-size: 12px;
-    background: #000;
+    margin: 0 20px;
+    padding: 5px 10px;
+    background: #ada;
+    border-radius: 0 0 10px 10px;
+    height: 80px;
 }
 
-p{
-	display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+.box{
+    margin: 10px auto;
+    width: 600px;
+    height: 340px;
+    border: 2px solid black;
+    border-radius: 20px 20px;
 }
 
-li{
-	float: left;
-	list-style: none;
-
+.box__form{
+    padding: 20px;
+    margin: 20px;
+    background: #aaa;
+    border-radius: 10px 10px 10px 10px;
 }
 
-a{
-	display: block;
-	text-decoration: none;
-	padding: 20px 10px;
-	background: #aaa;
-	
+.hideText{
+    display: none;
+}
+
+#div-1, #div-2, #div-3{
+    margin-left: 5px;
+    border: 1px solid #aaa;
+    box-shadow:0 0 5px white;
+    font-size: 14px;
+    background: #eee;
+    padding: 0 3px;
+    border-radius: 2px;
+    display: none;
+}
+
+input[type="button"]{
+    float: right;
+    margin: 25px 5px;
+    padding: 5px;
 }
