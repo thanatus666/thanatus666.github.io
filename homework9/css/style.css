@@ -1,22 +1,6 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*{
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure, 
@@ -65,98 +49,97 @@ table {
 	font-style: normal;
 }
 
-.wrapper {
-	height: 2306px;
-	width: 2400px;
-	position: absolute;
-	box-sizing: border-box;
-}
-
-@media (min-width: 769px) {
+@media (min-width: 960px) {
     header {
-	height: 847px;
+	height: 827px;
 	width: 100%;
 	background-image: url(../img/bg7-8.png);
 	background-repeat: no-repeat;
+	background-position: center;
 }
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
 }
-.ie header {
-	height: 847px;
-	width: 100%;
-	background: url(../img/bg7-8.png);
-	background-repeat: no-repeat;
-}
-@media (min-width: 481px) and (max-width: 768px) {
-	header {
-	height: 798px;
-	width: 100%;
-	background-image: url(../img/bg7-8.png);
-	background-size: cover;
-}
-}
-@media (min-width: 321px) and (max-width: 480px) {
-	header {
-	height: 547px;
-	width: 100%;
-	background-image: url(../img/bg7-8.png);
-	background-size: cover;
-}
-}
-@media (max-width: 320px) {
-	header {
-	height: 515px;
-	width: 100%;
-	background-image: url(../img/bg7-8.png);
-	background-size: cover;
-}
-}
-@media (min-width: 769px) {
 .logo {
 	float: left;
-	margin: 51px 30px 166px 720px;
 	display: inline-block;
+	margin-top: 33px;
 }
 }
-.ie.logo {
+@media (min-width: 768px) and (max-width: 959px) {
+	header {
+	height: 737px;
+	width: 100%;
+	background-image: url(../img/bg7-8.png);
+	background-position: center;
+}
+.wrapper {
+	max-width: 768px;
+	margin: 0 auto;
+}
+.logo {
 	float: left;
-	margin: 51px 30px 166px 720px;
 	display: inline-block;
-}
-@media (min-width: 481px) and (max-width: 768px) {
-	.logo {
-	float: left;
-	margin: 51px 30px 29px 833px;
+	margin-top: 13px;
+	margin-left: 22px;
+	margin-bottom: 31px;
 }
 }
-
-@media (min-width: 321px) and (max-width: 480px) {
-	.logo {
-	margin: 51px 30px 20px 1125px;
-	float: left;
+@media (min-width: 480px) and (max-width: 767px) {
+	header {
+	height: 549px;
+	width: 100%;
+	background-image: url(../img/bg7-8.png);
+	background-position: top center;
+}
+.logo {
 	display: block;
+	text-align: center;
+	-moz-padding-top: 51px;
+	padding-top: 51px;
+}
+.wrapper {
+	max-width: 480px;
+	margin: 0 auto;
 }
 }
-@media (max-width: 320px) {
-		.logo {
-	margin: 51px 30px 30px 1125px;
-	float: left;
-	display: block;
+@media (max-width: 479px) {
+	header {
+	height: 465px;
+	width: 100%;
+	background-image: url(../img/bg7-8.png);
+	background-position: top center;
+	-moz-padding-top: 50px;
+	padding-top: 50px;
+}
+	.logo {
+	text-align: center;
+}
+.wrapper {
+	max-width: 320px;
+	margin: 0 auto;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
     .menu {
 	float: left;
 	display: inline-block;
-	margin: 74px 0px 44px 137px;
+	margin-left: 139px;
+	margin-top: 55px;
 }
 .menu li {
 	display: inline-block;
 	margin-right: 35px;
 	margin-left: 5px;
+	-moz-padding-left:5px;
+	-moz-padding-right: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
-
+.menu li:last-child {
+	margin-right: 0;
+}
 .menu li:hover {
 	border-bottom: 2px solid #edbfff;
 }
@@ -168,27 +151,17 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 }
 }
-.ie.menu {
-	float: left;
-	display: inline-block;
-	margin: 74px 0px 44px 137px;
-}
-.ie.menu li {
-	display: inline-block;
-	margin-right: 35px;
-	margin-left: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
     .menu {    
-    float: left;
-	margin: 0px 0px 80px 822px;
+    float: left;    
+    margin-left: 10px;
 }
 .menu li {
 	display: inline-block;
 	margin-right: 35px;
 	margin-left: 5px;
+	-moz-padding-left: 5px;
+	-moz-padding-right: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -204,80 +177,62 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 }
 }
-@media (max-width: 480px) {
-    .menu {
-	display: none;
-}
-}
-@media (min-width: 481px) {
+@media (min-width: 768px) {
 	.menu480 {
 		display: none;
 	}
 }
-@media (max-width: 480px) {
+
+@media (max-width: 767px) {
+	.menu {
+		display: none;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
 	.menu480 {
 	display: block;
 	position: relative;
-	box-sizing: border-box;
-	clear: left;
-	text-align: center;
-	height: 40px;
-	width: 244px;
-	margin: 0px auto;
-
+	margin-top: 34px;
 	}
 	.menu480 li {
-		position: relative;
-		display: block;
-		height: 38px;
+		float: none;
+		z-index: 33;
 		text-align: center;
 	}
 	.menu480 li a {
-		display: block;
 		text-decoration: none;
 		color: white;
 		font-size: 24px;
 	    font-family: 'league_gothicregular', Arial, sans-serif;
-		width: 50px;
-		margin: 0 auto;
-		margin-top: 7px;
 	}
 
-
-.menu480:hover {
-	border: 1px solid black;
-	border-radius: 5px 5px 0 0;
-	border-bottom: 0px;
-}
-
-.menu480 li:hover {
-	background-color: rgba(63, 50, 72, 0.5);
-	border-bottom: 1px solid #36283e;
-	border-top: 1px solid #503d58;
-	border-radius: 5px 5px 0 0;
-	height: 37px;
-}
-.menu480 li a:hover {
-	border-bottom: 2px solid #edbfff;
-}
-
 .menu480_item {
+	display: none;
 	position: absolute;
-	opacity: 0;
-	box-sizing: border-box;
-	width: 244px;
-	margin: 0 auto;
+	background-color: rgba(63, 50, 72, 0.5);
+	border-radius: 15px;
+	top: 19px;
+	width: 245px;
+	text-align: center;
+	z-index: 22;
+	left: 110px;
 }
-
 .menu480_item li {
 	display: block;
-	height: 40px;
 	text-align: center;
+	font-size: 24px;
+	border-top: 1px solid #503d58;
+	border-bottom: 1px solid #36283e;
+	margin-top: 1px;
+	-moz-padding-top: 14px;
+	padding-top: 14px;
 	float: none;
-	width: 244px;
+	z-index: 33;
 }
 
 .menu480_item li a {
+	-moz-white-space: nowrap;
 	white-space: nowrap;
 	display: block;
 	text-decoration: none;
@@ -286,98 +241,186 @@ table {
 	font-size: 24px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	margin: 0px auto;
+	-moz-padding: 0px;
 	padding: 0px;
 	margin-top: 0px;
 }
 
 .menu480 li:hover .menu480_item {
-	left: 0;
-	opacity: 1;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-radius: 0 0 5px 5px;
+	display: block;
 }
 
 .menu480 li:hover .menu480_item li {
 	background-color: rgba(63, 50, 72, 0.5);
-	height: 35px;
-	border-bottom: 1px solid #36283e;
-	border-top: 1px solid #503d58;
+    text-decoration:none;
 }
-.menu480 li:hover .menu480_item li {
-	border-radius: 0 0 5px 5px;
-}
-.menu480 li:hover .menu480_item li a:hover {
-	background-color: rgba(63, 50, 72, 0.65);
+.menu480 li .menu480_item li:first-child:hover{
+      border-radius: 15px 15px 0 0;
+    }
+    .menu480 li .menu480_item li:last-child:hover{
+      border-radius: 0 0 15px 15px;
+    }
+.menu480 li:hover .menu480_item li:hover {
+	background-color: rgba(63, 50, 72, 0.85);
 	border-bottom: 2px solid #edbfff;
-	height: 100%;
 }
 }
-@media (min-width: 481px) {
-.container {
+@media (max-width: 479px) {
+	.menu480 {
+	display: block;
+	position: relative;
+	margin-top: 33px;
+	}
+	.menu480 li {
+		float: none;
+		z-index: 33;
+		text-align: center;
+	}
+	.menu480 li a {
+		text-decoration: none;
+		color: white;
+		font-size: 24px;
+	    font-family: 'league_gothicregular', Arial, sans-serif;
+	}
+
+.menu480_item {
+	display: none;
+	position: absolute;
+	background-color: rgba(63, 50, 72, 0.5);
+	border-radius: 15px;
+	top: 19px;
+	width: 245px;
+	text-align: center;
+	z-index: 22;
+	left: 38px;
+}
+.menu480_item li {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	border-top: 1px solid #503d58;
+	border-bottom: 1px solid #36283e;
+	margin-top: 1px;
+	-moz-padding-top: 14px;
+	padding-top: 14px;
+	float: none;
+	z-index: 33;
+}
+
+.menu480_item li a {
+	-moz-white-space: nowrap;
+	white-space: nowrap;
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	font-size: 24px;
+	font-family: 'league_gothicregular', Arial, sans-serif;
+	margin: 0px auto;
+	-moz-padding: 0px;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.menu480 li:hover .menu480_item {
+	display: block;
+}
+
+.menu480 li:hover .menu480_item li {
+	background-color: rgba(63, 50, 72, 0.5);
+    text-decoration:none;
+}
+.menu480 li .menu480_item li:first-child:hover{
+      border-radius: 15px 15px 0 0;
+    }
+    .menu480 li .menu480_item li:last-child:hover{
+      border-radius: 0 0 15px 15px;
+    }
+.menu480 li:hover .menu480_item li:hover {
+	background-color: rgba(63, 50, 72, 0.85);
+	border-bottom: 2px solid #edbfff;
+}
+}	
+@media (min-width: 960px) {
+.container-colomn-text-fone {
 	height: 400px;
 	width: 100%;
 	background-color: rgba(0,0,0,0.3);
 	clear: both;
 	display: inline-block;
+	margin-top: 165px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
-.container {
+@media (min-width: 768px) and (max-width: 959px) {
+.container-colomn-text-fone {
+	height: 400px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+	clear: both;
+	display: inline-block;
+	margin-top: 76px;
+}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+.container-colomn-text-fone {
 	height: 246px;
 	width: 100%;
 	background-color: rgba(0,0,0,0.3);
 	clear: both;
 	display: inline-block;
-	margin-top: 30px;
+	margin-top: 34px;
 }
 }
-@media (max-width: 320px) {
-	.container {
+@media (max-width: 479px) {
+	.container-colomn-text-fone {
 	height: 190px;
 	width: 100%;
 	clear: both;
 	display: inline-block;
-	margin-top: 30px;
+	margin-top: 53px;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .colomn {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -2px -3px no-repeat;
 	float: left;
-	margin: 182px 295px 184px 399px;
+	margin-left: -316px;
+	margin-top: 182px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.colomn {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -2px -3px no-repeat;
 	float: left;
-	margin: 182px 0px 184px 811px;
+	margin-top: 182px;
+
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.colomn {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -2px -3px no-repeat;
 	float: left;
-	margin: 105px 0px 106px 961px;
+	margin-top: 105px;
+	
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.colomn {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -2px -3px no-repeat;
 	float: left;
-	margin: 94px 0px 106px 1040px;
+	margin-top: 86px;
+
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .text {
 	width: 500px;
 	height: 100%;
@@ -407,7 +450,7 @@ table {
 	line-height: 24px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.text {
 	width: 300px;
 	height: 70%;
@@ -420,14 +463,16 @@ table {
 	font-size: 47px;
 	color: #fefefe;
 	font-family: 'league_gothicregular', Arial, sans-serif;
-	margin-top: 92px;
+	margin-top: 100px;
+	margin-bottom: 9px;
 }
 
 .text h2 {
 	font-size: 23px;
 	color: #edbfff;
 	font-family: 'league_gothicregular', Arial, sans-serif;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
+	letter-spacing: 0px;
 }
 
 .text p {
@@ -435,10 +480,10 @@ table {
 	color: #ffffff;
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: lighter;
-	line-height: 24px;
+	line-height: 27px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.text {
 	width: 200px;
 	height: 70%;
@@ -451,7 +496,7 @@ table {
 	font-size: 36px;
 	color: #fefefe;
 	font-family: 'league_gothicregular', Arial, sans-serif;
-	margin-top: 89px;
+	margin-top: 90px;
 	line-height: 42px;
 	width: 200px;
 }
@@ -468,20 +513,21 @@ table {
 	display: none;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.text {
 	width: 230px;
 	height: 75%;
 	float: left;
 	margin-left: 40px;
 	overflow: hidden;
+	margin-bottom: 59px;
 }
 
 .text h1 {
 	font-size: 36px;
 	color: #fefefe;
 	font-family: 'league_gothicregular', Arial, sans-serif;
-	margin-top: 80px;
+	margin-top: 75px;
 	line-height: 39px;
 	width: 200px;
 }
@@ -497,84 +543,87 @@ table {
 	display: none;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .fone {
 	float: left;
 	margin-top: -17px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 .fone {
 	float: left;
-	margin-top: -23px;
 	margin-left: 103px;
+	margin-top: -22px;
 }
 }
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.fone {
 	height: 305px;
 	float: left;
 	width: 188px;
-	margin-left: 21px;
-	margin-top: -10px;
+	margin-left: 23px;
+	margin-top: -9px;
+	margin-bottom: -28px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.fone img {
 		height: 100%;
 		width: 100%;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.fone {
 		display: none;
 	}
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .colomn--right {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
-	float: right;
-	margin-right: 398px;
-	margin-left: 0px;
+	float: left;
+	margin-top: 182px;
+	margin-left: 28px;
+	display: none;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.colomn--right {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
 	float: right;
-	margin-right: 816px;
 	margin-left: 0px;
+	margin-right: -4px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.colomn--right {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
 	float: right;
-	margin-right: 955px;
-	margin-left: 0px;
+	margin-right: -4px;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.colomn--right {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
 	float: right;
-	margin-right: 1036px;
 	margin-left: 0px;
+	margin-right: -2px;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .rounds {
 	width: 90px;
-	margin: 91px 20px 10px 1435px;
+	float: right;
+	margin-top: 74px;
+	margin-right: 160px;
 }
 
 .rounds_item {
@@ -587,15 +636,17 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.rounds {
 	width: 90px;
-	margin: 33px 20px 10px 1357px;
+	float: right;
+	margin: 23px 133px 10px 0px;
 }
 
 .rounds_item {
@@ -608,15 +659,17 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 		.rounds {
 	width: 90px;
-	margin: 17px 20px 10px 1166px;
+	margin: auto;
+	clear: both;
 }
 
 .rounds_item {
@@ -629,15 +682,17 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.rounds {
 	width: 90px;
-	margin: 22px 20px 10px 1166px;
+	clear: both;
+	margin: auto;;
 }
 
 .rounds_item {
@@ -650,51 +705,56 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
 }
 }
-@media (min-width: 481px) {
+@media (min-width: 768px) {
 	.top {
 	height: 340px;
 	width: 100%;
+	background: -o-linear-gradient (top, #745083, #37283e);
+	background: -moz-linear-gradient(top, #745083, #37283e);
 	background: linear-gradient(to top, #37283e, #745083);
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	clear: both;
 }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 	.top {
 	height: 597px;
 	width: 100%;
+	background: -o-linear-gradient (top, #745083, #37283e);
+	background: -moz-linear-gradient(top, #745083, #37283e);
 	background: linear-gradient(to top, #37283e, #745083);
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	clear: both;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .about {
 	color: white;
 	width: 280px;
 	display: inline-block;
-	margin-left: 730px;
+	margin-top: 77px;
+	margin-left: -2px;
 }
 
 .icon {
 	height: 30px;
 	width: 30px;
 	background: url(../img/aboutsprite.png) -2px 0 no-repeat;
-	margin-top: 78px;
 	float: left;
 }
 
 .icon--middle {
 	height: 30px;
 	width: 30px;
-	background: url(../img/aboutsprite.png) -42px 4px no-repeat;
+	background: url(../img/aboutsprite.png) -40px 4px no-repeat;
 }
 
 .icon--right {
@@ -706,18 +766,18 @@ table {
 .about h4 {
 	font-size: 30px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
-	margin-top: 77px;
 	display: inline-block;
 	float: left;
-	margin-left: 20px;
+	margin-left: 24px;
+	margin-bottom: 6px;
 }
 
 .about p {
 	font-size: 16px;
 	font-family: 'Open Sans', Arial, sans-serif;
-	line-height: 25px;
+	line-height: 24px;
 	clear: both;
-	margin-left: 48px;
+	margin-left: 55px;
 }
 
 .about a {
@@ -727,7 +787,7 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	float: right;
 	margin-top: 20px;
-	margin-right: 13px;
+	margin-right: 10px;
 }
 
 .about a:hover {
@@ -735,22 +795,22 @@ table {
 }
 
 .about--middle {
-	margin-left: 55px;
+	margin-left: 52px;
 }
 
 .about--right {
-	margin-left: 55px;
+	margin-left: 45px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.about {
 	color: white;
 	width: 200px;
 	display: inline-block;
-	margin-left: 847px;
 	height: 70%;
 	overflow: hidden;
 	margin-top: 78px;
+	margin-left: 22px;
 }
 
 .icon {
@@ -789,7 +849,6 @@ table {
 	clear: both;
 	margin-left: 48px;
 	font-weight: lighter;
-	height: 61%;
 }
 
 .about a {
@@ -798,8 +857,8 @@ table {
 	font-size: 18px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	float: right;
-	margin-top: 0px;
-	margin-right: 11px;
+	margin-top: -14px;
+	margin-right: 6px;
 }
 
 .about a:hover {
@@ -814,7 +873,7 @@ table {
 	margin-left: 55px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 .about {
 	color: white;
 	width: 450px;
@@ -894,7 +953,7 @@ table {
 	margin: 0px auto;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.about {
 	color: white;
 	width: 295px;
@@ -977,39 +1036,49 @@ table {
 	margin: 13px auto;
 }
 }
-@media (min-width: 481px) {
+@media (min-width: 960px) {
 .middle {
-	height: 558px;
+	height: 509px;
 	width: 100%;
 	background-color: #f9f9f9;
-	padding-top: 50px;
+	-moz-padding-top: 99px;
+	padding-top: 99px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px){
+@media (min-width: 768px) and (max-width: 959px) {
+.middle {
+	height: 608px;
+	width: 100%;
+	background-color: #f9f9f9;
+}
+}
+@media (min-width: 480px) and (max-width: 767px){
 	.middle {
-	height: 969px;
+	height: 951px;
 	width: 100%;
 	background-color: #f9f9f9;
-	padding-top: 50px;
+	-moz-padding-top: 69px;
+	padding-top: 69px;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.middle {
 	height: 1158px;
 	width: 100%;
 	background-color: #f9f9f9;
+	-moz-padding-top: 50px;
 	padding-top: 50px;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .autor {
 	height: 295px;
 	width: 427px;
 	background-image: url(../img/blog.png);
 	background-repeat: no-repeat;
-	margin: 50px 0px 0px 743px;
 	display: inline-block;
 	float: left;
+	margin-left: 24px;
 }
 
 .autor img {
@@ -1039,19 +1108,21 @@ table {
 	line-height: 24px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.autor {
 	height: 273px;
 	width: 313px;
 	background-image: url(../img/blog768.png);
 	background-repeat: no-repeat;
-	margin: 51px 0px 24px 857px;
 	display: inline-block;
 	float: left;
+	margin-left: 35px;
+	margin-top: 100px;
+	margin-bottom: 23px;
 }
 
 .autor img {
-	margin: 17px 14px 5px -24px;
+	margin: 19px 14px 5px -24px;
 	float: left;
 }
 
@@ -1060,7 +1131,8 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	font-size: 24px;
 	color: black;
-	margin-top: 24px;
+	margin-top: 31px;
+	margin-bottom: 5px;
 }
 
 .autor span {
@@ -1077,18 +1149,19 @@ table {
 	line-height: 25px;
 	height: 57%;
 	overflow: hidden;
+	margin-right: 30px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.autor {
 	height: 272px;
 	width: 416px;
 	background-image: url(../img/blog768.png);
 	background-repeat: no-repeat;
-	display: block;
-	float: left;
-	margin: 21px 0px 88px 1006px;
 	background-size: cover;
+	margin-left: 47px;
+	display: block;
+	margin-bottom: 89px;
 }
 
 .autor img {
@@ -1119,7 +1192,7 @@ table {
 	overflow: hidden;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 		.autor {
 	height: 272px;
 	width: 245px;
@@ -1160,13 +1233,13 @@ table {
 	overflow: hidden;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .blog {
 	height: 295px;
 	width: 433px;
 	display: inline-block;
-	margin: 80px 0px 0px 57px;
 	float: left;
+	margin: 28px 0px 0px 57px;
 	margin-bottom: -28px;
 }
 
@@ -1185,7 +1258,7 @@ table {
 	font-family: 'Open Sans', Arial, sans-serif;
 	display: inline-block;
 	font-weight: bold;
-	margin-bottom: 7px;
+	margin-bottom: 8px;
 }
 
 .blog_text p {
@@ -1229,14 +1302,14 @@ table {
 	margin-right: 4px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.blog {
-	height: 295px;
-	width: 433px;
+	height: 290px;
 	display: inline-block;
-	margin: 80px 0px 0px 57px;
+	margin: 100px 0px -28px 53px;
 	float: left;
-	margin-bottom: -28px;
+	margin-top: 100px;
+	width: 350px;
 }
 
 .blog h4 {
@@ -1245,8 +1318,7 @@ table {
 }
 
 .blog ul li {
-	margin-top: 20px;
-	margin-bottom: 29px;
+	margin-bottom: 4px;
 }
 
 .blog_text h6 {
@@ -1260,7 +1332,7 @@ table {
 .blog_text p {
 	font-size: 16px;
 	font-family: 'Open Sans', Arial, sans-serif;
-	line-height: 15px;
+	line-height: 20px;
 	letter-spacing: -0.5px;
 }
 
@@ -1285,6 +1357,8 @@ table {
 	color: black;
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	font-size: 30px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .blog a {
@@ -1294,18 +1368,18 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	cursor: pointer;
 	float: right;
-	margin-right: 105px;
+	margin-right: 23px;
 	margin-top: -2px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.blog {
-	height: 295px;
-	width: 433px;
+	height: 294px;
+	width: 385px;
 	display: block;
-	margin: 80px 0px 0px 1042px;
-	clear: both;
-	margin-bottom: -28px;
+	margin-left: 83px;
+	-moz-white-space: nowrap;
+	white-space: nowrap;
 }
 
 .blog h4 {
@@ -1329,8 +1403,12 @@ table {
 .blog_text p {
 	font-size: 16px;
 	font-family: 'Open Sans', Arial, sans-serif;
-	line-height: 15px;
+	line-height: 16px;
 	letter-spacing: -0.5px;
+	width: 267px;
+	overflow: hidden;
+	-moz-white-space: nowrap;
+	white-space: nowrap;
 }
 
 .blog_img {
@@ -1363,18 +1441,18 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	cursor: pointer;
 	float: right;
-	margin-right: 105px;
-	margin-top: -2px;
+	margin-right: 49px;
+	margin-top: -4px;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.blog {
 	height: 295px;
 	width: 280px;
 	display: block;
-	margin: 86px 0px 0px 1060px;
 	clear: both;
 	margin-bottom: -28px;
+	margin: 90px 0px 0px 19px;
 }
 
 .blog h4 {
@@ -1383,7 +1461,7 @@ table {
 }
 
 .blog ul li {
-	margin-top: 27px;
+	margin-top: 20px;
 	margin-bottom: 27px;
 }
 
@@ -1440,14 +1518,17 @@ table {
 	margin-top: -2px;
 }
 }
-@media (min-width: 769px) {
-.rounds--bottom {
-	clear: left;
-	margin: 20px 20px 67px 916px;
+@media (min-width: 960px) {
+.rounds--bottom {;
+	clear: left;;
+	margin-left: 175px;;
+	float: none;;
+	margin-right: 0px;
 }
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1457,19 +1538,22 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.rounds--bottom {
+	float: none;
+	margin: 4px 0px 0px 149px;
 	clear: left;
-	margin: 42px 20px 67px 973px;
 }
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1479,19 +1563,22 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.rounds--bottom {
-	margin: -332px 20px 67px 1165px;
-	float: left;
+	display: block;
+	margin: -357px 0px 0px 212px;
+	position: absolute;
 }
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1501,12 +1588,13 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.rounds--bottom {
 	margin: -327px 20px 67px 1185px;
 	float: left;
@@ -1514,6 +1602,7 @@ table {
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1523,12 +1612,13 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
 }
 }
-@media (min-width: 481px) {
+@media (min-width: 768px) {
     .brends {
 	clear: both;
 	width: 100%;
@@ -1536,13 +1626,13 @@ table {
 	height: 122px;
 	border-top: 1px solid #e6e6e6;
 	border-bottom: 1px solid #e6e6e6;
-	margin-top: 60px;
+	margin-top: 71px;
 }
 	.brends img {
 	margin-top: 26px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.brends img {
 		display: none;
 	}
@@ -1550,16 +1640,15 @@ table {
 	clear: both;
 	text-align: center;
 	height: 232px;
-	width: 362px;
-	border-top: 1px solid #e6e6e6;
-	border-bottom: 1px solid #e6e6e6;
 	background-image: url(../img/brends480.png);
-	margin: 88px auto 0px auto;
+	margin: 61px auto 0px auto;
 	background-repeat: no-repeat;
 	background-position: center;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 .brends img {
 		display: none;
 	}
@@ -1568,50 +1657,64 @@ table {
 	text-align: center;
 	height: 422px;
 	width: 100%;
-	border-top: 1px solid #e6e6e6;
 	border-bottom: 1px solid #e6e6e6;
 	background-image: url(../img/brends320.png);
-	margin: 92px auto 0px auto;
+	margin: 89px auto 0px auto;
 	background-repeat: no-repeat;
 	background-position: center;
+	border-top: 1px solid #e6e6e6;
+	-moz-padding-top: -14px;
+	padding-top: -14px;
 }
 }
-@media (min-width: 481px) {
+@media (min-width: 960px) {
 .bottom {
 	height: 396px;
 	width: 100%;
 	background-color: #ececec;
 }
-
 .bottext {
 	height: 53%;;
-	width: 206px;
+	width: 273px;
 	display: inline-block;
-	margin: 82px 56px 50px 834px;
 	overflow: hidden;
+	margin: 92px 50px 50px 0px;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 768px) and (max-width: 959px) {
+.bottom {
+	height: 396px;
+	width: 100%;
+	background-color: #ececec;
+}
+.bottext {;
+	width: 215px;
+	display: inline-block;;
+	margin: 88px 42px 0px 20px;;
+	float: left;
+}
+}
+@media (min-width: 480px) and (max-width: 767px) {
 
 .bottom {
-	height: 583px;
+	height: 582px;
+	-moz-padding-top: 86px;
 	padding-top: 86px;
 }
-
 .bottext {
 	display: block;
-	height: 16%;
-	margin: 0px 56px 82px 976px;
+	height: 20%;
 	width: 430px;
+	margin-left: 20px;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	.bottom {
 		display: none;
 	}
 }
 
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 .bottext h3 {
 	font-size: 48px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
@@ -1640,6 +1743,7 @@ table {
 	font-size: 30px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	color: black;
+	margin-bottom: 7px;
 }
 
 .bottext p {
@@ -1651,14 +1755,14 @@ table {
 }
 
 .bottext--second {
-	margin: 82px 58px 50px 0px;
+	margin: 94px 66px 50px 0px;
 }
 
 .bottext--third {
 	margin: 82px 0px 50px 0px;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.bottext h3 {
 	font-size: 36px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
@@ -1690,7 +1794,7 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	color: black;
 	margin-top: 15px;
-	margin-bottom: 3px;
+	margin-bottom: 9px;
 }
 
 .bottext p {
@@ -1702,14 +1806,18 @@ table {
 }
 
 .bottext--second {
-	margin: 83px 58px 50px 0px;
+	margin: 86px 44px 50px 0px;
+	height: 220px;
+	overflow: hidden;
 }
 
 .bottext--third {
-	margin: 82px 0px 50px 0px;
+	margin: 86px 0px 50px 0px;
+	height: 221px;
+	overflow: hidden;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.bottext h3 {
 	font-size: 26px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
@@ -1742,7 +1850,7 @@ table {
 	line-height: 25px;
 }
 .bottext--second {
-	margin: 0px 58px 94px 976px;
+	margin: 50px 0px 0px 20px;
 }
 
 .bottext h4 {
@@ -1753,19 +1861,24 @@ table {
 }
 
 .bottext--third {
-	margin: 0px 0px 50px 976px;
+	margin: 59px 0px 0px 20px;
 }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
 footer {
 	height: 115px;
 	width: 100%;
 	background-image: url(../img/bgfooter7-8.png);
 }
-
+.container-menu-address {
+	margin: 0 auto;
+	width: 960px;
+	height: 100%;
+}
 .menu--foot {
 	float: left;
-	margin: 47px 57px 45px 705px;
+	margin-left: -10px;
+	margin-top: 45px;
 }
 
 .menu--foot li a {
@@ -1778,8 +1891,8 @@ footer {
 
 address {
 	float: left;
-	margin-top: 56px;
-	margin-left: 208px;
+	margin-top: 55px;
+	margin-left: 287px;
 	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
@@ -1790,7 +1903,7 @@ address span {
 	font-weight: bold;
 }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	footer {
 	height: 200px;
 	width: 100%;
@@ -1798,10 +1911,13 @@ address span {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.container-menu-address {
+	margin: 0 auto;
+	height: 100%;
+}
 .menu--foot {
 	float: left;
-	margin: 47px 30px 45px 823px;
+	margin-top: 47px;
 }
 
 .menu--foot li a {
@@ -1815,7 +1931,7 @@ address span {
 address {
 	float: left;
 	margin-top: 103px;
-	margin-left: 0px;
+	margin-left: 30px;
 	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
@@ -1826,7 +1942,7 @@ address span {
 	font-weight: bold;
 }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
 footer {
 	height: 200px;
 	width: 100%;
@@ -1834,9 +1950,15 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.container-menu-address {
+	margin: 0 auto;
+	height: 100%;
+}
 .menu--foot {
-	margin: 45px 0px 20px 980px;
 	display: inline-block;
+	margin-left: 24px;
+	margin-bottom: 19px;
+	margin-top: 46px;
 }
 
 .menu--foot li {
@@ -1866,13 +1988,14 @@ address span {
 	font-weight: bold;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 479px) {
 	footer {
 	height: 156px;
 	width: 100%;
 	background-image: url(../img/bgfooter7-8.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	-moz-padding-top: 44px;
 	padding-top: 44px;
 }
 .menu--foot {
@@ -1890,4 +2013,7 @@ address {
 address span {
 	font-weight: bold;
 }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
 }
