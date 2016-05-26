@@ -146,12 +146,12 @@
 	background: none;
 	font: 14px Arial, sans-serif;
 	color: #333;
-	text-align: left; /* для Opera Presto */
+	text-align: left; /* РґР»СЏ Opera PrestoВ */
 	-moz-appearance: textfield;
 }
 .jq-number__field input::-webkit-inner-spin-button,
 .jq-number__field input::-webkit-outer-spin-button {
-	margin: 0; /* в каких-то браузерах присутствует отступ */
+	margin: 0; /* РІ РєР°РєРёС…-С‚Рѕ Р±СЂР°СѓР·РµСЂР°С… РїСЂРёСЃСѓС‚СЃС‚РІСѓРµС‚ РѕС‚СЃС‚СѓРї */
 	-webkit-appearance: none;
 }
 .jq-number__spin {
