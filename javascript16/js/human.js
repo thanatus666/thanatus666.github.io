@@ -1,24 +1,24 @@
 function Human() {
-    this.name = 'Victor';
-    this.age = 59;
+    this.name = 'Fedor';
+    this.age = 40;
     this.sex = 'male';
-    this.height = 180;
-    this.weight = 80;
+    this.height = 181;
+    this.weight = 100;
 }
 
 function Worker() {
     this.workplace = 'Google';
     this.salary = '5000';
     this.work = function() {
-        console.log('I work in Google');
+        console.log('I work in GOIT');
     }
 }
 
 function Student() {
-    this.university = 'MIT';
-    this.scholarship = '400';
+    this.university = 'DPI';
+    this.scholarship = '300';
     this.watchTVShows = function() {
-        console.log('I watch Game of Thrones');
+        console.log('I watch NBA');
     }
 }
 

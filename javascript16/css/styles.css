@@ -8,10 +8,10 @@
 }
 .search{
     width: 40%;
-    padding: 5px;
+    padding: 4px;
     font-size: 14px;
     outline: none;
-    margin: 0 auto 20px ;
+    margin: 10px auto 20px ;
 }
 .button {
     width: 6%;
